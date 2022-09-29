@@ -46,7 +46,7 @@ function prueba() {
                 }
             }
     } else {
-        alert("Debe seleccionar una opcion adecuada");
+        alert("Debe seleccionar una opción");
     }
 }
 /*Tomar lo del boton enviar y al hacer click se le asigna la funcion prueba*/

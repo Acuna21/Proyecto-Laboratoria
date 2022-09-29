@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Primera Vista</title>
+    <meta charset="UTF-8" />
+    <!--Unir el Html con el CSS-->
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <div id="header">
+        <h2><b>Entretenimiento</b></h2>
+    </div>
+
+    <div id="container">
+        <div id="preguntas">
+            <h3 id="pregunta" class="pregunta1">
+            ¿Quién es el antagonista en la película "El Rey León?
+            </h3>
+        </div>
+    <div class="containerImage">
+        <img
+            class="imagen"
+            src="https://naldzgraphics.net/wp-content/uploads/2014/04/8-lion-king-minimla-poster.jpg"
+            alt="Rey Leon"
+        />
+
+        <form id="respuestas" class="formulario" method="post">
+            <div class="radioButton">
+                <input id="opcion1" type="radio" name="OneQuestion" />
+                <label for="opcion1"> Simba </label>
+            </div>
+            <br />
+            <div class="radioButton">
+                <input id="opcion2" type="radio" name="OneQuestion" />
+                <label for="opcion2"> Nala </label>
+            </div>
+            <br />
+            <div class="radioButton">
+                <input id="opcion3" type="radio" name="OneQuestion" />
+                <label for="opcion3"> Scar </label>
+            </div>
+            <br />
+        </form>
+        <div class="buttonSig">
+            <a style="display: none;" id="PasarPregunta" href="vista2.html">Siguiente pregunta</a>
+        </div>
+      </div>
+
+      <div class="button">
+        <input id="buttonSend" type="button" value="Enviar respuesta" />
+      </div>
+      <br />
+
+      <div id="incorrect" style="display: none;">
+        <text
+          >Ups :( tu respuesta es INCORRECTA. <br />
+          La respuesta correcta es
+          <b>SCAR</b>
+        </text>
+      </div>
+      <br />
+      <div id="correct" style="display: none;">
+        <text>Genial, tu respuesta es CORRECTA</text>
+      </div>
+    </div>
+
+    <!--Unir el Html con el JS-->
+    <script type="text/javascript" src="./js/index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Primera Vista</title>
+    <meta charset="UTF-8" />
+    <!--Unir el Html con el CSS-->
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <div id="header">
+      <h2><b>Entretenimiento</b></h2>
+    </div>
+
+    <div id="container">
+      <div id="preguntas">
+        <h3 id="pregunta" class="pregunta3">
+            ¿Quién es el actor o la actriz más joven en ganar un Óscar? </h3>
+      </div>
+      <div class="containerImage">
+        <img
+          class="imagen"
+          src="https://cinefilosoficial.com/wp-content/uploads/2019/02/oscars-2019numero-magazine.jpg"
+          alt="Premio Oscar"
+        />
+        <form id="respuestas" class="formulario" method="post">
+          <div class="radioButton">
+            <input id="opcion1" type="radio" name="OneQuestion" />
+            <label for="opcion1"> Tatum O'Neal </label>
+          </div>
+          <br />
+          <div class="radioButton">
+            <input id="opcion2" type="radio" name="OneQuestion" />
+            <label for="opcion2"> Anna Paquin  </label>
+          </div>
+          <br />
+          <div class="radioButton">
+            <input id="opcion3" type="radio" name="OneQuestion" />
+            <label for="opcion3">Timothy Hutton </label>
+          </div>
+          <br />
+        </form>
+        <div class="buttonSig">
+          <a style="display: none;" id="PasarPregunta" href="vista3.html">Siguiente pregunta</a>
+
+          <!--<
+            style="display: none;"-->
+        </div>
+      </div>
+
+      <div class="button">
+        <input id="buttonSend" type="button" value="Enviar respuesta" />
+      </div>
+      <br />
+
+      <div id="incorrect" style="display: none;">
+        <text
+          >Ups :( tu respuesta es INCORRECTA. <br />
+          La respuesta correcta es
+          <b>Tatum O'Neal </b>
+        </text>
+      </div>
+      <br />
+      <div id="correct" style="display: none;">
+        <text>Genial, tu respuesta es CORRECTA</text>
+      </div>
+    </div>
+
+    <!--Unir el Html con el JS-->
+    <script type="text/javascript" src="./js/index.js"></script>
+  </body>
+</html>

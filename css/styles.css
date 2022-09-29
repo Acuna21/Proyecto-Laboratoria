@@ -1,0 +1,130 @@
+/*Aspectos generalas de la página*/
+body {
+  background-color: #ff7b4a;
+  font-family: Garamond;
+  margin: 0%;
+}
+
+/*PARTE DEL ENCABEZADO DE ENTRETENIMIENTO/*
+/*Ajustar y centrar el div del header
+Como tiene un ID para acceder a el se pone un #delante*/
+#header {
+  background-color: #ff8223;
+  position: fixed; /*siempre permanece en el mismo lugar*/
+  top: 0;
+  width: 100%; /*ancho*/
+  outline: 3px solid black;
+
+  z-index: 5; /* */
+
+  /*Centrar contenido del div*/
+  display: flex;
+  justify-content: center; /*proiedad del flex para agrupar. En este caso centrar*/
+}
+/*Ajustar tamaño de texto*/
+#header h2 {
+  font-size: 36px;
+}
+
+/*PARTE DEL CUERPO DE LAS PREGUNTAS*/
+#container {
+  background-color: hwb(62 33% 1%);
+  width: 800px;
+  height: 500px;
+  margin: auto; /*sus valores predeterminados centran el contenedor  */
+  position: relative;
+  top: 90px;
+}
+
+#container h3 {
+  color: black;
+  text-align: center;
+  position: relative;
+  top: 35px;
+  font-size: 25px;
+}
+/*TAMAÑO A LA IMAGEN*/
+.imagen {
+  height: 270px;
+  margin-left: 23px;
+  margin-top: 40px;
+  width: 270px;
+  text-align: center;
+}
+
+/*RADIO BUTTON*/
+/*Cuando es clase se acede por un .  */
+.radioButton {
+  background-color: #ff8223;
+  width: 200px;
+  height: 25px;
+  border: 2px solid black;
+  border-radius: 20px; /*Ovalar al gusto. 0 es cuadrado*/
+  font-size: 20px;
+}
+
+/*Ubicar las preguntas*/
+
+/*TODO LO DEL FLEX SE AGREGA AL PADRE PERO LOS CAMBIOS SE HACEN AL HIJO*/
+.containerImage {
+  display: flex;
+  align-items: center;
+}
+
+.formulario {
+  margin-left: 40px;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px; /*Crea un espacio con el bloque de arriba*/
+}
+
+#buttonSend {
+  background-color: whitesmoke;
+  width: 200px;
+  height: 40px;
+  border: 2px solid goldenrod;
+  border-radius: 20px;
+  font-size: 20px;
+  font-weight: bold; /*Negrita*/
+}
+
+/*Se hace el diseño para los botones incorrect9o y correcto*/
+#correct,
+#incorrect {
+  width: 300px;
+  font-size: 20px;
+  margin-left: 30%;
+  padding: 8px;
+  text-align: center;
+  border: 0px;
+  border-radius: 10px;
+}
+
+#incorrect {
+  background-color: crimson;
+}
+
+#correct {
+  background-color: rgb(66, 228, 16);
+}
+
+/*Boton para pasar de pregunta*/
+#PasarPregunta {
+  background-color: whitesmoke;
+  border: 1px solid goldenrod;
+  border-radius: 20px;
+  font-size: 20px; 
+  margin-left: 65px;
+  font-weight:bold ; /*Negrita*/
+  text-decoration: none; /*quitar linea enlace*/
+  padding: 10px; /*padding es el espacio entre el contenido del elemento y su borde */
+  
+}
+
+/*cambiar color texto bottonSig*/
+a {
+  color:black;
+}
